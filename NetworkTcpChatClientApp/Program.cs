@@ -1,7 +1,7 @@
 ﻿using System.Net.Sockets;
 using System.Net;
 
-var host = IPAddress.Loopback;
+var host = "192.168.1.179";
 var port = 7777;
 
 using TcpClient client = new();

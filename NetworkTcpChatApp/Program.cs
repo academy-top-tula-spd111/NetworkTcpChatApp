@@ -6,7 +6,7 @@ await server.ListenAsync();
 
 class TcpServer
 {
-    TcpListener listener = new(IPAddress.Loopback, 7777);
+    TcpListener listener = new(IPAddress.Any, 7777);
     List<TcpUser> users = new List<TcpUser>();
 
     public async Task ListenAsync()
